@@ -17,6 +17,3 @@ def welcome_view(request):
         form = NewTimeForm()
         
     return render(request,'about.html', context={'form':form})
-    
-        
-dsfsdfsdfsfd
