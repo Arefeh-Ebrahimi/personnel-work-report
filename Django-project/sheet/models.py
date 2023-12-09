@@ -27,8 +27,7 @@ class Post(models.Model):
 
     text = models.CharField(max_length=100)
     datatime_created = models.DateTimeField(auto_now_add=True)
-    name = models.CharField(max_length=50)
-    project = models.BooleanField(default=True) 
+    name = models.CharField(max_length=50) 
     Productivity = models.CharField(choices=PRODUCTIVITY_CHOICES, max_length=50)
     Certainty = models.CharField(choices=CERTAINTY_CHOICES, max_length=50)
     Health_Feeling = models.CharField(choices=HEALTH_FEELING_CHOICES, max_length=50)

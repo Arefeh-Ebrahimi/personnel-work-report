@@ -6,4 +6,4 @@ class NewTimeForm(forms.ModelForm):
     class Meta : 
         model = Post
         
-        fields = ['text','project','Productivity','Certainty','Health_Feeling','Stage']
+        fields = ['text','Productivity','Certainty','Health_Feeling','Stage','name']
