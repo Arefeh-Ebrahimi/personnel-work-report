@@ -3,37 +3,38 @@ from django.db import models
 class Task(models.Model):
     
     PRODUCTIVITY_CHOICES = (
-        ('Great' , 'great'),
-        ('Good' , 'good'),
-        ('Bad' , 'bad'),
+        ('great' , 'Great'),
+        ('good' , 'Good'),
+        ('bad' , 'Bad'),
     )
     CERTAINTY_CHOICES = (
-        ('Confident' , 'confident'),
-        ('Midst' , 'midst'),
-        ('Vague' , 'vague'),
+        ('confident' , 'Confident'),
+        ('midst' , 'Midst'),
+        ('vague' , 'Vague'),
     )
     HEALTH_FEELING_CHOICES = (
-    ('Perfect' , 'perfect'),
-    ('Normal' , 'normal'),
-    ('Weakness' , 'weakness'),
+    ('perfect' , 'Perfect'),
+    ('normal' , 'Normal'),
+    ('weakness' , 'Weakness'),
     )
     STAGE_CHOICES = (
-        ('R&D','r&d'),
-        ('Action(Doing Task)' , 'action_doing_task'),
-        ('Cominucating' , 'cominucating'),
-        ('Monitor' , 'monitor'),
-        ('Setup Things' , 'setup_things'),
+        ('r&d','R&D'),
+        ('action_doing_task' , 'Action(Doing Task)'),
+        ('cominucating' , 'Cominucating'),
+        ('monitor' , 'Monitor'),
+        ('setup_things' , 'Setup Things'),
     )
     PROJECT = (
-        ('All', 'all'),
-        ('Retail', 'retail'),
-        ('Promotion', 'promotion'),
-        ('IESCO', 'iesco'),
-        ('DR hajitaghi Web', 'dR_hajitaghi_web'),
-        ('Baraye Iran', 'baraye_iran'),
-        ('Branding', 'branding'),
-        ('DR hajitaghi App', 'dR_hajitaghi_app'),
-        ('Setup things','setup_things'),
+        ('all', 'All'),
+        ('retail', 'Retail'),
+        ('promotion', 'Promotion'),
+        ('iesco', 'IESCO'),
+        ('dR_hajitaghi_web', 'DR hajitaghi Web'),
+        ('baraye_iran', 'Baraye Iran'),
+        ('branding', 'Branding'),
+        ('dR_hajitaghi_app', 'DR hajitaghi App'),
+        ('setup_things','Setup things'),
+        
     )
 
     name = models.CharField(max_length=255)
